@@ -180,6 +180,12 @@ body {
   font-weight: 800;
 }
 
+.new-article {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .new-article h3 {
   font-size: 1rem;
   margin-bottom: 0.3rem;
@@ -194,7 +200,7 @@ body {
 .new-section hr {
   border: none;
   border-top: 1px solid #444;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /* Top articles section */
@@ -207,7 +213,7 @@ body {
 
 .article-card {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: flex-start;
 }
 
