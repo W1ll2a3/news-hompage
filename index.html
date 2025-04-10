@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+            msdt:dt="string"
+            >Lisa-Marie
+            Koomson</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+          >
+          <mso:Order msdt:dt="string">22700.0000000000</mso:Order>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+            msdt:dt="string"
+            >Takoradi Training
+            Center</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+          >
+          <mso:ContentTypeId msdt:dt="string">0x0101</mso:ContentTypeId>
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="mobile-header">
+      <img src="assets/images/logo.svg" alt="Logo" class="logo" />
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger">
+        <img
+          src="assets/images/icon-menu.svg"
+          alt="Menu Icon"
+          class="menu-icon"
+        />
+        <img
+          src="assets/images/icon-menu-close.svg"
+          alt="Close Icon"
+          class="close-icon"
+        />
+      </label>
+
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mobile-main">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img
+          src="assets/images/image-web-3-mobile.jpg"
+          alt="Web 3.0 Image"
+          class="hero-img"
+        />
+        <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+        <p class="main-desc">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </section>
+
+      <!-- New Articles Section -->
+      <section class="new-section">
+        <h2 class="new-heading">New</h2>
+        <div class="new-article">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr />
+        <div class="new-article">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <hr />
+        <div class="new-article">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
+
+      <!-- Top Articles Section -->
+      <section class="top-articles">
+        <div class="article-card">
+          <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+          <div class="article-text">
+            <h2 class="number">01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops" />
+          <div class="article-text">
+            <h2 class="number">02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt="Gaming Growth"
+          />
+          <div class="article-text">
+            <h2 class="number">03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
