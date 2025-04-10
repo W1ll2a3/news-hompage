@@ -245,7 +245,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 26px;
-  font-size: 1rem;
+  font-size: 0.938rem;
   color: #5e607a;
   margin-bottom: 1rem;
 }
@@ -319,7 +319,7 @@ body {
 
 .new-section hr {
   border: none;
-  border-top: 1px solid #444;
+  border-top: 1px solid #5e607a;
   margin: 1rem 0;
 }
 
@@ -463,6 +463,11 @@ body {
 } */
 
 
+/* @media (max-width: 768px) {
+  body {
+    padding: 2rem 5.313rem;
+  }
+} */
 
 /* ========== Desktop Styles ========== */
 @media (min-width: 768px) {
@@ -547,6 +552,7 @@ body {
 
   .new-section {
     /* height: 31.375rem; */
+    width: 21.875rem;
   }
   .new-heading {
     font-size: 2.5rem;
@@ -577,7 +583,7 @@ body {
   }
 
   .article-text p {
-    font-size: 0.8rem;
+    font-size: 0.938rem;
   }
 
   .article-text .number {
