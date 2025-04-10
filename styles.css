@@ -42,6 +42,102 @@ body {
   position: relative;
 }
 
+.site-header {
+  padding: 2.5rem 0;
+  /* border-bottom: 1px solid #e0e0e0; */
+  position: relative;
+  z-index: 100;
+  /* background-color: white; */
+}
+
+.site-header .container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Desktop Nav */
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: #5e607a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 0.938rem;
+}
+
+.desktop-nav a:hover {
+  color: #f15d51;
+}
+
+/* Mobile Menu */
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-icon,
+.close-icon {
+  width: 30px;
+  height: auto;
+}
+
+.close-icon {
+  display: none;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-checkbox:checked ~ .hamburger .menu-icon {
+  display: none;
+}
+
+.menu-checkbox:checked ~ .hamburger .close-icon {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  background: white;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.menu-checkbox:checked ~ .mobile-nav {
+  display: block;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+}
+
+
 .mobile-header {
   display: flex;
   justify-content: space-between;
@@ -121,12 +217,12 @@ body {
 
 /* Main Content */
 .mobile-main {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .hero-img {
   width: 100%;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   margin-bottom: 1rem;
 }
 
@@ -156,7 +252,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 4px;
+  width: 11.563rem;
 }
 
 /* Hero section */
@@ -248,3 +344,21 @@ body {
   color: #5e607a;
   font-weight: 400;
 }
+
+/* ========== Desktop Styles ========== */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem 10.313rem;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .hamburger,
+  .mobile-nav {
+    display: none;
+  }
+
+}
+

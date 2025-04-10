@@ -41,33 +41,40 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="mobile-header">
-      <img src="assets/images/logo.svg" alt="Logo" class="logo" />
+    <!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <img src="assets/images/logo.svg" alt="Logo" class="logo">
 
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
-      <label for="menu-toggle" class="hamburger">
-        <img
-          src="assets/images/icon-menu.svg"
-          alt="Menu Icon"
-          class="menu-icon"
-        />
-        <img
-          src="assets/images/icon-menu-close.svg"
-          alt="Close Icon"
-          class="close-icon"
-        />
-      </label>
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
 
-      <nav class="mobile-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Mobile Nav -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">
+      <img src="assets/images/icon-menu.svg" alt="Menu" class="menu-icon">
+      <img src="assets/images/icon-menu-close.svg" alt="Close" class="close-icon">
+    </label>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <main class="mobile-main">
       <!-- Hero Section -->
@@ -77,13 +84,15 @@
           alt="Web 3.0 Image"
           class="hero-img"
         />
-        <h1 class="main-title">The Bright Future of Web 3.0?</h1>
-        <p class="main-desc">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <a href="#" class="read-more-btn">Read More</a>
+        <div>
+          <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+          <p class="main-desc">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="read-more-btn">Read more</a>
+        </div>
       </section>
 
       <!-- New Articles Section -->
