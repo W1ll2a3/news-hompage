@@ -374,7 +374,7 @@ body {
 }
 
 /* ========== Tablet Styles ========== */
-@media (min-width: 768px) and (max-width: 1223px) {
+/* @media (min-width: 768px) and (max-width: 1223px) {
   body {
     padding: 2rem 5rem;
   }
@@ -399,6 +399,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 31.938rem;
   }
 
   .hero-img {
@@ -459,12 +460,12 @@ body {
   .article-text .number {
     font-size: 1.5rem;
   }
-}
+} */
 
 
 
 /* ========== Desktop Styles ========== */
-@media (min-width: 1224px) {
+@media (min-width: 768px) {
   body {
     padding: 2rem 10.313rem;
   }
@@ -511,6 +512,15 @@ body {
   .hero-section {
     display: flex;
     flex-direction: column;
+    height: 31.938rem;
+  }
+
+  .hero-section .hero-img {
+    height: 18.75rem;
+  }
+
+  .hero-section-about {
+    /* height: 11.438rem; */
   }
 
   .hero-section,
@@ -536,7 +546,7 @@ body {
   }
 
   .new-section {
-    /* height: 11.375rem; */
+    /* height: 31.375rem; */
   }
   .new-heading {
     font-size: 2.5rem;
