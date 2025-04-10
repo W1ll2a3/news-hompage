@@ -373,6 +373,95 @@ body {
   font-weight: 400;
 }
 
+/* ========== Tablet Styles ========== */
+@media (min-width: 768px) and (max-width: 1223px) {
+  body {
+    padding: 2rem 5rem;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .hamburger,
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section-about {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+    width: 50%;
+  }
+
+  .main-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .new-section {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .top-articles {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .article-card {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .article-card img {
+    width: 90px;
+  }
+
+  .article-text h3 {
+    font-size: 1rem;
+  }
+
+  .article-text p {
+    font-size: 0.875rem;
+  }
+
+  .article-text .number {
+    font-size: 1.5rem;
+  }
+}
+
+
 
 /* ========== Desktop Styles ========== */
 @media (min-width: 1224px) {
