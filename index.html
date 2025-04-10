@@ -42,83 +42,91 @@
   </head>
   <body>
     <!-- Header -->
-<header class="site-header">
-  <div class="container">
-    <img src="assets/images/logo.svg" alt="Logo" class="logo">
+    <header class="site-header">
+      <div class="container">
+        <img src="assets/images/logo.svg" alt="Logo" class="logo" />
 
-    <!-- Desktop Nav -->
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
 
-    <!-- Mobile Nav -->
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <label for="menu-toggle" class="hamburger">
-      <img src="assets/images/icon-menu.svg" alt="Menu" class="menu-icon">
-      <img src="assets/images/icon-menu-close.svg" alt="Close" class="close-icon">
-    </label>
-    <nav class="mobile-nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+        <!-- Mobile Nav -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburger">
+          <img src="assets/images/icon-menu.svg" alt="Menu" class="menu-icon" />
+          <img
+            src="assets/images/icon-menu-close.svg"
+            alt="Close"
+            class="close-icon"
+          />
+        </label>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="mobile-main">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <img
-          src="assets/images/image-web-3-mobile.jpg"
-          alt="Web 3.0 Image"
-          class="hero-img"
-        />
-        <div>
-          <h1 class="main-title">The Bright Future of Web 3.0?</h1>
-          <p class="main-desc">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <a href="#" class="read-more-btn">Read more</a>
-        </div>
-      </section>
+      <!-- Main Content Wrapper -->
+      <div class="main-grid">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="Web 3.0 Image"
+            class="hero-img"
+          />
+          <div class="hero-section-about">
+            <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+            <div class="main-right">
+              <p class="main-desc">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#" class="read-more-btn">Read more</a>
+            </div>
+          </div>
+        </section>
 
-      <!-- New Articles Section -->
-      <section class="new-section">
-        <h2 class="new-heading">New</h2>
-        <div class="new-article">
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
-        <hr />
-        <div class="new-article">
-          <h3>The Downsides of AI Artistry</h3>
-          <p>
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </div>
-        <hr />
-        <div class="new-article">
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-        </div>
-      </section>
+        <!-- New Articles Section -->
+        <section class="new-section">
+          <h2 class="new-heading">New</h2>
+          <div class="new-article">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr />
+          <div class="new-article">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr />
+          <div class="new-article">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+      </div>
 
       <!-- Top Articles Section -->
       <section class="top-articles">
